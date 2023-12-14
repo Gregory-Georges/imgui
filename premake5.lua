@@ -1,9 +1,7 @@
-workspace "Engine"
+workspace "imgui"
     architecture "x64"
     configurations
     {
-        "Debug",
-        "Release",
         "Dist"
     }
 
@@ -47,18 +45,6 @@ project "imgui"
 
         }
 
-
-        filter "Configurations:Debug"
-            defines "ENGINE_DEBUG"
-            symbols "on"
-            runtime "debug"
-
-        filter "Configurations:Release"
-            defines "ENGINE_RELEASE"
-            optimize "on"
-            runtime "release"
-
         filter "Configurations:Dist"
-            defines "ENGINE_DIST"
             optimize "on"
             runtime "release"
