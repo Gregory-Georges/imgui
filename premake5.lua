@@ -6,7 +6,7 @@ workspace "imgui"
     }
 
 
-    outputdir = "%{cfg.buildcfg}-%{cf.system}-%{cfg.architecture}"
+    outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
 
