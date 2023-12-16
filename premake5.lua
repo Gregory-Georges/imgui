@@ -26,13 +26,14 @@ project "imgui"
     
     	includedirs
     	{
-    	    "."
+    	    ".",
+            "../glfw/include"
     	}
 
         files
         {
-            "/*.h",
-            "/*.cpp"
+            "./*.h",
+            "./*.cpp"
         }
 
         defines
